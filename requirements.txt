@@ -1,0 +1,11 @@
+Flask
+flask-cors
+requests
+google-generativeai
+python-dotenv
+torch
+numpy
+Pillow
+scikit-learn
+torchvision
+transformers
