@@ -1,5 +1,19 @@
 {
+  "version": 2,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index" }
-  ]
+  ],
+  "functions": {
+    "api/*": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
+  "build": {
+    "cache": true,
+    "env": {
+      "NODE_OPTIONS": "--max_old_space_size=4096"
+    }
+  },
+  "ignore": ["tests/*", "docs/*", ".github/*", "*.md"]
 }
